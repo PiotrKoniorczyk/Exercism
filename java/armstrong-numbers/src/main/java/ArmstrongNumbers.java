@@ -11,5 +11,4 @@ class ArmstrongNumbers {
 		}
 		return numberToCheck == result;
 	}
-
 }
