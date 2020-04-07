@@ -3,18 +3,25 @@ import java.util.Random;
 
 class DnDCharacter {
 
+    private int strength;
+    private int dexterity;
+    private int constitution;
+    private int intelligence;
+    private int wisdom;
+    private int charisma;
+    private int hitpoints;
 
-    public void ability(int strength, int dexterity, int constitution, int intelligence, int wisdom, int charisma, int hitpoints) {
-        int Strength = rollDice();
-        int Dexterity = rollDice();
-        int Constitution = rollDice();
-        int Intelligence = rollDice();
-        int Wisdom = rollDice();
-        int Charisma = rollDice();
-        int Hitpoints;
+    public DnDCharacter(){
+        strength = ability();
+        dexterity = ability();
+        constitution = ability();
+        intelligence = ability();
+        wisdom = ability();
+        charisma = ability();
+        hitpoints = 10 + modifier(constitution);
+
     }
-
-    private int rollDice(){
+    int ability() {
         Random rollDice = new Random();
         int[] result = new int[4];
         int[] range = {1,2,3,4,5,6};
@@ -31,39 +38,35 @@ class DnDCharacter {
         return abilityValue;
     }
 
-
-
     int modifier(int input) {
-        Hitpoints = ((10 - getConstitution())/2);
-        return Hitpoints;
-        }
-
+        return Math.floorDiv(input - 10, 2);
+    }
 
     public int getStrength() {
-        return Strength;
+        return strength;
     }
 
     public int getDexterity() {
-        return Dexterity;
+        return dexterity;
     }
 
     public int getConstitution() {
-        return Constitution;
+        return constitution;
     }
 
     public int getIntelligence() {
-        return Intelligence;
+        return intelligence;
     }
 
     public int getWisdom() {
-        return Wisdom;
+        return wisdom;
     }
 
     public int getCharisma() {
-        return Charisma;
+        return charisma;
     }
 
     public int getHitpoints() {
-        return Hitpoints;
+        return hitpoints;
     }
 }
