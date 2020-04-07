@@ -19,5 +19,4 @@ class Darts {
 
         return score;
     }
-
 }
