@@ -47,7 +47,6 @@ class Scrabble {
                     score += 10;
                 }
             }
-
         }
     }
     int getScore() {
