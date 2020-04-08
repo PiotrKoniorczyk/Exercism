@@ -1,5 +1,5 @@
 class DifferenceOfSquaresCalculator {
-    
+
     int computeSquareOfSumTo(int input) {
         int squareOfSum = 0;
         for (int i = 1; i <= input ; i++) {
