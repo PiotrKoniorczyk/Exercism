@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ScrabbleScoreTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2020-04-08T19:20:00" hostname="Pros-MBP" time="0.004">
+<testsuite name="ScrabbleScoreTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2020-04-08T21:16:22" hostname="Pros-MBP" time="0.004">
   <properties/>
   <testcase name="testAShortValuableWord" classname="ScrabbleScoreTest" time="0.001"/>
-  <testcase name="testEntireAlphabetAvailable" classname="ScrabbleScoreTest" time="0.001"/>
+  <testcase name="testEntireAlphabetAvailable" classname="ScrabbleScoreTest" time="0.0"/>
   <testcase name="testAUpperCaseLetter" classname="ScrabbleScoreTest" time="0.0"/>
   <testcase name="testALongMixCaseWord" classname="ScrabbleScoreTest" time="0.0"/>
   <testcase name="testAEnglishLikeWord" classname="ScrabbleScoreTest" time="0.0"/>
