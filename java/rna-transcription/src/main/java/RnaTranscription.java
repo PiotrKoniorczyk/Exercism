@@ -18,7 +18,6 @@ class RnaTranscription {
                 result += "U";
             }
         }
-
         return result;
     }
 }

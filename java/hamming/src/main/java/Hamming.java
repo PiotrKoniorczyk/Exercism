@@ -18,7 +18,6 @@ class Hamming {
             if(leftStrandCheck[i] != rightStrandCheck[i]){
                 HammingDistance += 1;
             }
-
         }
     }
 

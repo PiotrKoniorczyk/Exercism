@@ -5,7 +5,8 @@ class Darts {
 
     Darts(double x, double y) {
         this.x = x;
-        this.y = y;}
+        this.y = y;
+    }
 
     int score() {
         int score = 0;

@@ -9,7 +9,6 @@ class SpaceAge {
         age /= 100;
 
     }
-
     double getSeconds() {
         return age;
     }

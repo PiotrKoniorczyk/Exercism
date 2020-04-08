@@ -2,7 +2,7 @@ class ArmstrongNumbers {
 
 	boolean isArmstrongNumber(int numberToCheck) {
 		int digitNumber = String.valueOf(numberToCheck).length();
-		String[] splitDigit =  String.valueOf(numberToCheck).split("");
+		String[] splitDigit = String.valueOf(numberToCheck).split("");
 
 		int result = 0;
 		for (int i = 0; i < digitNumber; i++) {

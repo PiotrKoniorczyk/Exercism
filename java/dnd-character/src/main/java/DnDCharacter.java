@@ -19,7 +19,6 @@ class DnDCharacter {
         wisdom = ability();
         charisma = ability();
         hitpoints = 10 + modifier(constitution);
-
     }
     int ability() {
         Random rollDice = new Random();

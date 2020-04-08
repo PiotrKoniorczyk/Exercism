@@ -8,7 +8,7 @@ class RaindropConverter {
             convert.append("Plang");
         }if(number%7 == 0){
             convert.append("Plong");
-        }else if(number%3 != 0 && number%5 != 0 && number%7 != 0){convert.append(number);
+        }else if(number%3 !=0 && number%5 !=0 && number%7 !=0){convert.append(number);
     }
         return String.valueOf(convert);
     }

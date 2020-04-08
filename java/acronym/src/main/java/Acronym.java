@@ -5,7 +5,6 @@ class Acronym {
     Acronym(String phrase) {
         this.pharse = phrase;
     }
-
     String get() {
         StringBuilder acronym = new StringBuilder();
         char[] pharseSplit = pharse.toCharArray();

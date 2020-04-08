@@ -17,6 +17,7 @@ class Scrabble {
                     score += 1;
                 }
             }
+
             for (char c : twoPoint) {
                 if (wordSplit[i] == c) {
                     score += 2;

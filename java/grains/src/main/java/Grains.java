@@ -16,7 +16,6 @@ class Grains {
         }
         return result;
     }
-
     BigInteger grainsOnBoard() {
         BigInteger result = BigInteger.ZERO;
         BigInteger totalResult = BigInteger.ZERO;
