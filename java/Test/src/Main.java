@@ -2,27 +2,45 @@ import java.util.ArrayList;
 import java.util.List;
 
 class NaturalNumber {
+    public static void main(String[] args) {
+        String rnaSequence = "AUGUUC";
+        String[] rnaSequence_Split ={};
+        rnaSequence_Split = rnaSequence.split("(?<=\\G...)");
 
-    List<Integer> naturalNumber_dividers = new ArrayList<>();
-        for (int i = 1; i < NaturalNumber; i++) {
-        if (NaturalNumber % i == 0) {
-            naturalNumber_dividers.add(i);
+        List<String> result= new ArrayList<String>();
+        for (int i = 0; i < rnaSequence_Split.length; i++) {
+            if (rnaSequence_Split[i].equals("AUG")) {
+                result.add("Methionine");
+            }else if(rnaSequence_Split[i].equals("UUU") ||
+                    rnaSequence_Split[i].equals("UUC")){
+                result.add("Phenylalanine");
+            }else if(rnaSequence_Split[i].equals("UUA") ||
+                    rnaSequence_Split[i].equals("UUG")){
+                result.add("Leucine");
+            }else if(rnaSequence_Split[i].equals("UCU") ||
+                    rnaSequence_Split[i].equals("UCC") ||
+                    rnaSequence_Split[i].equals("UCA") ||
+                    rnaSequence_Split[i].equals("UCG")) {
+                result.add("Serine");
+            }else if(rnaSequence_Split[i].equals("UAU") ||
+                    rnaSequence_Split[i].equals("UAC")) {
+                result.add("Tyrosine");
+            }else if(rnaSequence_Split[i].equals("UGU") ||
+                    rnaSequence_Split[i].equals("UGC")) {
+                result.add("Cysteine");
+            }else if(rnaSequence_Split[i].equals("UGG")) {
+                result.add("Tryptophan");
+            }else if(rnaSequence_Split[i].equals("UAA") ||
+                    rnaSequence_Split[i].equals("UAG") ||
+                    rnaSequence_Split[i].equals("UGA")) {
+                break;
+            }
+
         }
-    }
-    int naturalNumber_Sum = 0;
-        for (int i = 0; i < naturalNumber_dividers.size(); i++) {
-        naturalNumber_Sum += naturalNumber_dividers.get(i);
+        System.out.println(result);
 
 
-    }
-        if (naturalNumber_Sum < NaturalNumber) {
-        return Classification.DEFICIENT;
-    } else if (naturalNumber_Sum == NaturalNumber) {
-        return Classification.PERFECT;
-    } else if (naturalNumber_Sum > NaturalNumber) {
-        return Classification.ABUNDANT;
-    }
 
-        return null;
-}
+            
+        }
 }
