@@ -1,14 +1,28 @@
-import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.List;
 
-public class Main {
-    public static void main(String[] args) {
-        int num = 2;
-        String numBinar = Integer.toBinaryString(num);
+class NaturalNumber {
 
-
-        System.out.println(numBinar);
-
+    List<Integer> naturalNumber_dividers = new ArrayList<>();
+        for (int i = 1; i < NaturalNumber; i++) {
+        if (NaturalNumber % i == 0) {
+            naturalNumber_dividers.add(i);
+        }
+    }
+    int naturalNumber_Sum = 0;
+        for (int i = 0; i < naturalNumber_dividers.size(); i++) {
+        naturalNumber_Sum += naturalNumber_dividers.get(i);
 
 
     }
+        if (naturalNumber_Sum < NaturalNumber) {
+        return Classification.DEFICIENT;
+    } else if (naturalNumber_Sum == NaturalNumber) {
+        return Classification.PERFECT;
+    } else if (naturalNumber_Sum > NaturalNumber) {
+        return Classification.ABUNDANT;
+    }
+
+        return null;
+}
 }
