@@ -8,7 +8,6 @@ class NaturalNumber {
     public Classification getClassification() {
         return classification;
     }
-
     public NaturalNumber(int naturalNumber) {
 
         if(naturalNumber <= 0)
@@ -19,9 +18,9 @@ class NaturalNumber {
             if (naturalNumber % i == 0) {
                 naturalNumber_dividers.add(i);
             }
-    }
-        for (int i = 0; i < naturalNumber_dividers.size(); i++) {
-            naturalNumber_Sum += naturalNumber_dividers.get(i);
+        }
+        for (Integer naturalNumber_divider : naturalNumber_dividers) {
+            naturalNumber_Sum += naturalNumber_divider;
         }
 
         if (naturalNumber_Sum < naturalNumber) {
@@ -31,6 +30,5 @@ class NaturalNumber {
         } else if (naturalNumber_Sum > naturalNumber) {
             classification = Classification.ABUNDANT;
         }
-
 }
 }
