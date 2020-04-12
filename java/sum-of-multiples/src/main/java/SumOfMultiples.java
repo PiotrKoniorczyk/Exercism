@@ -1,15 +1,14 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-class Proverb {
-    public static void main(String[] args) {
-        int[] setx = {0};
-        int number = 1;
-        int sum = 0;
+class SumOfMultiples {
+    int sum = 0;
+
+    SumOfMultiples(int number, int[] set) {
         List<Integer> numlist = new ArrayList<Integer>();
-        for (int i = 0; i < setx.length; i++) {
-            int num = setx[i];
+        for (int i = 0; i < set.length; i++) {
+            int num = set[i];
+            if(num == 0)break;
             int multiplier = 2;
             int add = num;
             while (add < number) {
@@ -27,7 +26,11 @@ class Proverb {
         for (int i = 0; i < numlist.size() ; i++) {
             sum += numlist.get(i);
         }
-        System.out.println(numlist);
-        System.out.println(sum);
     }
+
+
+    int getSum() {
+        return sum;
+    }
+
 }
