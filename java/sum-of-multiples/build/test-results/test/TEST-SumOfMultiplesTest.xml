@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SumOfMultiplesTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2020-04-12T23:22:39" hostname="Pros-MBP" time="0.232">
+<testsuite name="SumOfMultiplesTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2020-04-12T23:26:15" hostname="Pros-MBP" time="0.193">
   <properties/>
   <testcase name="testOneFactorIsAMultipleOfAnother" classname="SumOfMultiplesTest" time="0.001"/>
   <testcase name="testThreeFactors" classname="SumOfMultiplesTest" time="0.0"/>
@@ -9,14 +9,14 @@
   <testcase name="testNoFactorsMeanAnEmptySum" classname="SumOfMultiplesTest" time="0.0"/>
   <testcase name="testMoreThanOneMultipleWithinLimit" classname="SumOfMultiplesTest" time="0.0"/>
   <testcase name="testFactorZeroDoesNotAffectTheSumOfMultiplesOfOtherFactors" classname="SumOfMultiplesTest" time="0.0"/>
-  <testcase name="testAllNumbersAreMultiplesOf1" classname="SumOfMultiplesTest" time="0.0"/>
+  <testcase name="testAllNumbersAreMultiplesOf1" classname="SumOfMultiplesTest" time="0.001"/>
   <testcase name="testMoreThanOneFactorWithMultiplesWithinLimit" classname="SumOfMultiplesTest" time="0.0"/>
   <testcase name="testOneFactorHasMultiplesWithinLimit" classname="SumOfMultiplesTest" time="0.0"/>
-  <testcase name="testAMuchLargerLimit" classname="SumOfMultiplesTest" time="0.008"/>
+  <testcase name="testAMuchLargerLimit" classname="SumOfMultiplesTest" time="0.004"/>
   <testcase name="testEachMultipleIsOnlyCountedOnce" classname="SumOfMultiplesTest" time="0.0"/>
-  <testcase name="testSomePairsOfFactorsRelativelyPrimeAndSomeNot" classname="SumOfMultiplesTest" time="0.001"/>
+  <testcase name="testSomePairsOfFactorsRelativelyPrimeAndSomeNot" classname="SumOfMultiplesTest" time="0.0"/>
   <testcase name="testFactorsNotRelativelyPrime" classname="SumOfMultiplesTest" time="0.0"/>
-  <testcase name="testSolutionsUsingIncludeExcludeMustExtendToCardinalityGreater3" classname="SumOfMultiplesTest" time="0.209"/>
+  <testcase name="testSolutionsUsingIncludeExcludeMustExtendToCardinalityGreater3" classname="SumOfMultiplesTest" time="0.174"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

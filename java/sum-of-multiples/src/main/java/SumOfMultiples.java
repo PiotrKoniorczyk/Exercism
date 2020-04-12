@@ -6,31 +6,30 @@ class SumOfMultiples {
 
     SumOfMultiples(int number, int[] set) {
         List<Integer> numlist = new ArrayList<Integer>();
-        for (int i = 0; i < set.length; i++) {
-            int num = set[i];
-            if(num == 0)break;
+        for (int num : set) {
+            if (num == 0) break;
             int multiplier = 2;
             int add = num;
             while (add < number) {
                 boolean checkmulti = false;
-                for (int j = 0; j < numlist.size() ; j++) {
-                    if(add == numlist.get(j)){
-                        checkmulti = true; }
+                for (Integer integer : numlist) {
+                    if (add == integer) {
+                        checkmulti = true;
+                        break;
+                    }
                 }
-                if(checkmulti == false){numlist.add(add);}
+                if (!checkmulti) {
+                    numlist.add(add);
+                }
                 add = num * multiplier;
                 multiplier += 1;
-
             }
         }
-        for (int i = 0; i < numlist.size() ; i++) {
-            sum += numlist.get(i);
+        for (Integer integer : numlist) {
+            sum += integer;
         }
     }
-
-
     int getSum() {
         return sum;
     }
-
 }
