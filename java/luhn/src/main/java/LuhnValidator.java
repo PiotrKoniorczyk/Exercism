@@ -1,15 +1,15 @@
 
-class Proverb {
-    public static void main(String[] args) {
+class LuhnValidator {
 
-        String candidate = "055 444 285a";
+    boolean isValid(String candidate) {
         candidate = candidate.replace(" ","");
-        if(candidate.length() <= 0){
-            System.out.println(false);}
-        char[]x = candidate.toCharArray();
+        if(candidate.length() <= 1){
+            return false;
+        }
+        char[]digitCheck = candidate.toCharArray();
         for (int i = 0; i < candidate.length(); i++) {
-            if(Character.isLetter(x[i])){
-                System.out.println(false);;
+            if (!Character.isDigit(digitCheck[i])) {
+                return false;
             }
         }
         String[] candidate_split = candidate.split("");
@@ -21,36 +21,21 @@ class Proverb {
                     int add = Integer.parseInt(candidate_split[i])*2;
                     if (add > 9) {
                         add -= 9;
-                        sum += add;
-                    } else { sum += add; }
+                    }
+                    sum += add;
                 }
                 else{sum += Integer.parseInt(candidate_split[i]);}
-            }else if(candidate_split.length%2 != 0){
+            }else {
                 if(i%2 !=0){
                     int add = Integer.parseInt(candidate_split[i])*2;
                     if (add > 9) {
                         add -= 9;
-                        sum += add;
-                    }else { sum += add; }
+                    }
+                    sum += add;
                 }
                 else{sum += Integer.parseInt(candidate_split[i]);}
-
-
             }
-
-            }
-        System.out.println(sum%10 == 0);
-
-
-
-
-
-
-
-
-
-
-
         }
+        return sum%10 == 0;
+    }
 }
-
